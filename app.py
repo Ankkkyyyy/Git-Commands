@@ -1,6 +1,6 @@
 
 
-from func import doAddition,doSubtraction
+from func import doAddition, doDivision,doSubtraction
 from mulfunc import doMul
 
 def main():
@@ -9,6 +9,8 @@ def main():
           1. Add 
           2. Subtract
           3. Multiply 
+          4. Division 
+          5. testing 
           """)
 
     user_input = input('Select the function')
@@ -21,6 +23,8 @@ def main():
         result = doSubtraction(a,b)
     elif user_input == '3':
         result = doMul(a,b)
+    elif user_input == '4':
+        result = doDivision(a,b)
     
     print('Result ',result)
 
