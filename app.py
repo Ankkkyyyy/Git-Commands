@@ -10,7 +10,7 @@ def main():
           2. Subtract
           3. Multiply 
           4. Division 
-          5. testing 
+       
           """)
 
     user_input = input('Select the function')
@@ -25,6 +25,8 @@ def main():
         result = doMul(a,b)
     elif user_input == '4':
         result = doDivision(a,b)
+    else:
+        print("testing....")
     
     print('Result ',result)
 
