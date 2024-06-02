@@ -1,5 +1,5 @@
 
-# General Purpose Git & DVC  commands 
+# Git & DVC  commands 
 
 ## $ git add path/to/file
 Moves changes from the working directory to the staging area. This gives you the opportunity to prepare a snapshot before committing it to the official history.
