@@ -55,38 +55,7 @@ DVC is an open-source version control system for machine learning projects. It h
   - **Git**: Focused on code versioning.
   - **DVC**: Integrates with Git to provide a complete version control system for ML projects.
 
-## Combining Git and DVC
 
-Together, Git and DVC provide a robust system for managing both code and data in machine learning projects. Here's a simple workflow:
-
-1. **Initialize Git and DVC**:
-    ```bash
-    git init
-    dvc init
-    ```
-
-2. **Add Code to Git**:
-    ```bash
-    git add <code-files>
-    git commit -m "Add initial code"
-    ```
-
-3. **Add Data to DVC**:
-    ```bash
-    dvc add <data-files>
-    git add <data-files>.dvc .gitignore
-    git commit -m "Add data files"
-    ```
-
-4. **Push Code to Remote Repository**:
-    ```bash
-    git push origin main
-    ```
-
-5. **Push Data to Remote Storage**:
-    ```bash
-    dvc push
-    ```
 
 This workflow ensures that your code and data are versioned and managed efficiently, supporting reproducibility and collaboration in machine learning projects.
 
