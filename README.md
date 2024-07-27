@@ -1,25 +1,4 @@
-# DVC (Data Version Control) & Git: Differences and Usage
-
-## What is Git?
-
-Git is a distributed version control system designed to handle everything from small to very large projects with speed and efficiency. It tracks changes in source code during software development and allows multiple developers to work on a project simultaneously.
-
-### Key Features of Git
-- **Version Control**: Track changes in code and manage different versions.
-- **Branching and Merging**: Create branches to work on different features or fixes and merge them back into the main branch.
-- **Distributed**: Every developer has the full history of the project, enabling offline work and reducing dependency on a central server.
-- **Collaboration**: Easily collaborate with others through platforms like GitHub, GitLab, and Bitbucket.
-
-### Usage
-- **Initialization**: `git init`
-- **Adding Changes**: `git add <file>`
-- **Committing Changes**: `git commit -m "message"`
-- **Pushing to Remote Repository**: `git push`
-- **Pulling from Remote Repository**: `git pull`
-- **Branching**: `git branch <branch-name>`
-- **Merging**: `git merge <branch-name>`
-
-## What is DVC?
+# DVC (Data Version Control) & Git
 
 DVC is an open-source version control system for machine learning projects. It helps manage and version large data files, models, and pipelines, integrating seamlessly with Git.
 
@@ -32,6 +11,8 @@ DVC is an open-source version control system for machine learning projects. It h
 ### Usage
 - **Initialization**: `dvc init`
 - **Adding Data**: `dvc add <file>`
+- **Adding Stage**: `dvc add stage <file>`
+- **Adding Stage**: `dvc stage add -n <stage-name> -d <dependencies> -o <outputs> <command>`
 - **Tracking Data**: `dvc push`
 - **Pulling Data**: `dvc pull`
 - **Defining Pipelines**: `dvc run -n <stage-name> -d <dependencies> -o <outputs> <command>`
@@ -54,6 +35,27 @@ DVC is an open-source version control system for machine learning projects. It h
 - **Integration**:
   - **Git**: Focused on code versioning.
   - **DVC**: Integrates with Git to provide a complete version control system for ML projects.
+ 
+## What is Git?
+
+Git is a distributed version control system designed to handle everything from small to very large projects with speed and efficiency. It tracks changes in source code during software development and allows multiple developers to work on a project simultaneously.
+
+### Key Features of Git
+- **Version Control**: Track changes in code and manage different versions.
+- **Branching and Merging**: Create branches to work on different features or fixes and merge them back into the main branch.
+- **Distributed**: Every developer has the full history of the project, enabling offline work and reducing dependency on a central server.
+- **Collaboration**: Easily collaborate with others through platforms like GitHub, GitLab, and Bitbucket.
+
+### Usage
+- **Initialization**: `git init`
+- **Adding Changes**: `git add <file>`
+- **Committing Changes**: `git commit -m "message"`
+- **Pushing to Remote Repository**: `git push`
+- **Pulling from Remote Repository**: `git pull`
+- **Branching**: `git branch <branch-name>`
+- **Merging**: `git merge <branch-name>`
+
+## What is DVC?
 
 
 
